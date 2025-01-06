@@ -68,6 +68,7 @@ wooheadless.zip          # A pre-configured WordPress instance
    Import the `wooheadless.zip` file using Local (or another tool).
    - [Local by Flywheel Documentation](https://localwp.com/help-docs/) for guidance.
    - Alternatively, unzip it and place the extracted files in your local WordPress environment.
+   - I use "admin" as the username and password for development. 
 
 2. **Activate Plugins:**
    - WooCommerce
