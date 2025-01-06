@@ -72,6 +72,41 @@ const CartScreen = () => {
       console.error("Error updating item quantity:", error.message);
     }
   };
+  const proceedToCheckout = async (cartItems) => {
+    try {
+      const response = await fetch(
+        `${baseUrl}/stripe-cocart/v1/checkout`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            items: cartItems.map((item) => ({
+              name: item.name,
+              price: item.price / 100, // El precio ya está en centavos
+              quantity: item.quantity.value,
+            })),
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error("Failed to create checkout session");
+      }
+
+      const data = await response.json();
+
+      if (data.url) {
+        window.location.href = data.url; // Redirige a Stripe Checkout
+      } else {
+        alert("Checkout URL not returned");
+      }
+    } catch (error) {
+      console.error("Error during checkout:", error.message);
+      alert("An error occurred during checkout.");
+    }
+  };
 
   const removeFromCart = async (itemKey) => {
     try {
@@ -218,7 +253,10 @@ const CartScreen = () => {
         </div>
 
         {/* Botón para proceder al pago */}
-        <button className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">
+        <button
+          onClick={() => proceedToCheckout(cartItems)}
+          className="w-full bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+        >
           Proceed to Checkout
         </button>
       </div>

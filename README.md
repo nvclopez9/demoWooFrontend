@@ -1,48 +1,74 @@
-# Astro Starter Kit: Basics
+# Headless WooCommerce Demo
 
-```sh
-npm create astro@latest -- --template basics
-```
+This project is a demonstration of a headless e-commerce setup using Astro as the frontend framework, integrated with a WooCommerce backend and Stripe for payment processing.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🚀 Features
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Astro Frontend**: Built with Astro for fast, modern, and modular development.
+- **WooCommerce Integration**: Connects to a WooCommerce backend for managing products, orders, and cart functionality.
+- **Stripe Payment Gateway**: Handles payments via Stripe, ensuring secure and reliable transactions.
+- **Dynamic Cart Updates**: Includes a cart system that updates dynamically as users add or remove items.
+- **Post Section**: Displays posts fetched from the WooCommerce backend.
+- **Shop Section**: Shows all products available in the WooCommerce store.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## 🛠 Setup
 
-## 🚀 Project Structure
+### Prerequisites
 
-Inside of your Astro project, you'll see the following folders and files:
+1. Ensure you have a WooCommerce backend up and running.
+2. Create a `.env` file in the project root with the following content:
+   ```env
+   PUBLIC_API_URL=http://your-backend-url
+   ```
+   Replace `http://your-backend-url` with the URL of your WooCommerce backend.
+
+### Installation
+
+1. Clone the repository.
+   ```bash
+   git clone <repository-url>
+   cd <repository-folder>
+   ```
+2. Install dependencies.
+   ```bash
+   npm install
+   ```
+3. Start the development server.
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:4321` to see the project in action.
+
+## 📂 Project Structure
 
 ```text
 /
-├── public/
-│   └── favicon.svg
+├── public/             # Static assets (images, icons, etc.)
 ├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── components/     # Reusable components
+│   ├── layouts/        # Layout components
+│   ├── pages/          # Application pages (Shop, Posts, Cart)
+│   ├── helpers/        # Utility functions
+├── package.json        # Project metadata and dependencies
+└── .env                # Configuration for backend URL
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🔍 Sections
 
-## 🧞 Commands
+### Posts
+- Displays all posts fetched from the WooCommerce backend.
 
-All commands are run from the root of the project, from a terminal:
+### Shop
+- Lists all products available in the WooCommerce store.
+- Supports adding items to the cart and viewing product details.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Cart
+- Dynamically updates as users add or remove products.
+- Includes a checkout flow integrated with Stripe.
 
-## 👀 Want to learn more?
+## ⚠️ Note
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is intended for demonstration purposes only. It showcases how to connect a WooCommerce backend to a modern frontend framework and integrate payment functionality via Stripe.
+
+For production use, additional steps for deployment, security, and optimization are required.
