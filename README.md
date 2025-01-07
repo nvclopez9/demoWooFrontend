@@ -72,7 +72,7 @@ wooheadless.zip          # A pre-configured WordPress instance
    - Set up Site Address (URL) on settings to the new frontend (http://localhost:4321). 
 
 2. **Activate Plugins:**
-   - WooCommerce (The Home section doesnt work with headless frontend, needs to be deactivated in the future. The rest of the sections work as intended: orders, etc.)
+   - WooCommerce (The Home section doesnt work with a headless frontend cause it tries to launch the setup wizard. It needs to be deactivated in the future. The rest of the sections work as intended: orders, etc.)
    - CoCart
    - Custom Plugin (Stripe CoCart Integration)
    - Classic Editor
