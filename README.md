@@ -132,11 +132,9 @@ The **Stripe CoCart Integration Plugin** connects the WooCommerce backend with S
 
 ## 🧑‍💻 Development Notes
 
-This project is a demo to illustrate the integration of WordPress and Astro in a headless architecture. It demonstrates how to:
+This project is a demo to illustrate the integration of WordPress and Astro in a headless architecture. Future projects will need to implement better security and practices. It demonstrates how to:
 - Create API-driven workflows.
 - Leverage WordPress as a backend for modern web apps.
----
-Future projects will need to implement better security and practices. 
 ---
 
 ## ❓ Troubleshooting
