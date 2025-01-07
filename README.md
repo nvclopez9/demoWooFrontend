@@ -68,10 +68,11 @@ wooheadless.zip          # A pre-configured WordPress instance
    Import the `wooheadless.zip` file using Local (or another tool).
    - [Local by Flywheel Documentation](https://localwp.com/help-docs/) for guidance.
    - Alternatively, unzip it and place the extracted files in your local WordPress environment.
-   - I use "admin" as the username and password for development. 
+   - I use "admin" as the username and password for development.
+   - Set up Site Address (URL) on settings to the new frontend (http://localhost:4321). 
 
 2. **Activate Plugins:**
-   - WooCommerce
+   - WooCommerce (The Home section doesnt work with headless frontend, needs to be deactivated in the future. The rest of the sections work as intended: orders, etc.)
    - CoCart
    - Custom Plugin (Stripe CoCart Integration)
    - Classic Editor
@@ -79,7 +80,7 @@ wooheadless.zip          # A pre-configured WordPress instance
 3. **Custom Plugin Configuration:**
    - Navigate to **Stripe CoCart** in the WordPress admin menu.
    - Set the following fields:
-     - **Stripe Secret Key:** Your Stripe API key.
+     - **Stripe Secret Key:** Your Stripe API Secret. When using the testing secret key use the next card number: 4242 4242 4242 4242 and any data. 
      - **Success URL:** Redirect URL after successful payment (e.g., `http://localhost:4321/checkout-success`).
      - **Cancel URL:** Redirect URL after payment cancellation (e.g., `http://localhost:4321/cartView`).
 
@@ -134,7 +135,7 @@ The **Stripe CoCart Integration Plugin** connects the WooCommerce backend with S
 This project is a demo to illustrate the integration of WordPress and Astro in a headless architecture. It demonstrates how to:
 - Create API-driven workflows.
 - Leverage WordPress as a backend for modern web apps.
-
+Future projects will need to implement better security and practices. 
 ---
 
 ## ❓ Troubleshooting
