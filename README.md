@@ -4,7 +4,6 @@ This repository showcases a step-by-step implementation of a headless e-commerce
 
 The project is structured into two main parts:
 
----
 
 ## **Backend**
 
@@ -12,7 +11,7 @@ The backend is a WordPress installation managed with [PHP Composer](https://getc
 
 For local development, the backend is packaged with Docker. Be sure to follow the instructions provided in the `/backend` directory's `README` file to configure and use the backend correctly.
 
----
+
 
 ## **Frontend**
 
@@ -20,7 +19,6 @@ The frontend is a demo e-commerce application built with [Next.js](https://nextj
 
 Refer to the `/frontend` directory's `README` file for detailed instructions on setting up and running the frontend.
 
----
 
 ## **Notes**
 
