@@ -37,9 +37,9 @@ Follow these steps to set up the Bedrock backend:
    ```
 
 3. **Set up environment variables:**
-   Copy the `.env.dist` file to `.env.local` and configure the required settings, such as database credentials and URLs.
+   Copy the `.env.dist` file to `.env` and configure the required settings, such as database credentials and URLs.
    ```bash
-   cp .env.dist .env.local
+   cp .env.dist .env
    ```
 
 4. **Run the application:**
