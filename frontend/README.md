@@ -22,9 +22,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the r
 
 ## Environment Variables
 
-Environment variables are used to configure the application with dynamic values that can change between development, staging, and production environments. These values are stored in a `.env.local` file to ensure they are kept secure and not hard-coded into the codebase. Examples of such variables include API endpoints, keys, and URLs.
+Environment variables are used to configure the application with dynamic values that can change between development, staging, and production environments. These values are stored in a `.env` file to ensure they are kept secure and not hard-coded into the codebase. Examples of such variables include API endpoints, keys, and URLs.
 
-Here is the required `.env.local` configuration for this project:
+Here is the required `.env` configuration for this project:
 
 ```env
 GRAPHQL_ENDPOINT=http://localhost:8080/wp/graphql
@@ -59,7 +59,7 @@ This project uses `@graphql-codegen/cli` for generating TypeScript types and que
 
 ### GraphQL Codegen Usage
 
-1. Define the GraphQL endpoint in `.env.local`.
+1. Define the GraphQL endpoint in `.env`.
 2. Run `npm run codegen:dev` to watch for changes and regenerate types.
 3. Queries and mutations are defined in `graphql/` and utilized in the application using `graphql-request`.
 
