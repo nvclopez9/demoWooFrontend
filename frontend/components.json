@@ -2,14 +2,14 @@
   "$schema": "https://ui.shadcn.com/schema.json",
   "style": "new-york",
   "rsc": true,
-  "tsx": true,
   "tailwind": {
-    "config": "tailwind.config.ts",
+    "config": "tailwind.config.js",
     "css": "app/globals.css",
-    "baseColor": "neutral",
-    "cssVariables": true,
-    "prefix": ""
+    "baseColor": "slate",
+    "cssVariables": true
   },
-  "aliases": { "components": "/", "utils": "@/utils/ui" },
-  "iconLibrary": "lucide"
+  "aliases": {
+    "components": "/",
+    "utils": "@woographql/utils/ui"
+  }
 }

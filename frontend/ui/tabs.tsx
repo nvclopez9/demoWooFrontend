@@ -3,7 +3,7 @@
 import * as React from "react"
 import * as TabsPrimitive from "@radix-ui/react-tabs"
 
-import { cn } from "@/utils/ui"
+import { cn } from "@woographql/utils/ui"
 
 const Tabs = TabsPrimitive.Root
 
