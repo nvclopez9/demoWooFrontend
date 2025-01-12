@@ -7,11 +7,13 @@ This project is the frontend portion of the WooGraphQL demo, built using [Next.j
 First, run the development server:
 
 ```bash
+
+npm install
+
+# then
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
