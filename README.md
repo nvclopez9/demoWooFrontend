@@ -10,10 +10,10 @@ The backend is a WordPress installation managed using [PHP Composer](https://get
 
 ### Configuration and Setup
 
-Before running the backend, you need to configure the environment variables. These variables are defined in the `.env.local` file. A sample configuration file `.env.dist` is provided for reference.
+Before running the backend, you need to configure the environment variables. These variables are defined in the `.env` file. A sample configuration file `.env.dist` is provided for reference.
 
 #### Steps:
-1. Define the necessary environment variables in `.env.local`.
+1. Define the necessary environment variables in `.env`.
 2. Run `composer install` to install PHP dependencies.
 3. Start the Docker containers with `docker-compose up`.
 4. Additional configurations may be required as per the [official tutorial](https://woographql.com/blog/building-headless-shops-with-woographql-chapter-1-of-5).
@@ -24,14 +24,14 @@ The frontend is a demo e-commerce application built with [Next.js](https://nextj
 
 ### Configuration and Setup
 
-Before running the frontend, you need to configure the environment variables. Similar to the backend, these variables should be defined in a `.env.local` file. A `.env.dist` file is provided for guidance.
+Before running the frontend, you need to configure the environment variables. Similar to the backend, these variables should be defined in a `.env` file. A `.env.dist` file is provided for guidance.
 
 #### Steps:
-1. Define the necessary environment variables in `.env.local`.
+1. Define the necessary environment variables in `.env`.
 2. Install the required Node.js dependencies with `npm install`.
 3. Run the application using `npm run dev`.
 
 ## Notes
 
-- Ensure that both the backend and frontend are configured correctly with their respective `.env.local` files for proper functionality.
+- Ensure that both the backend and frontend are configured correctly with their respective `.env` files for proper functionality.
 - Follow the [official WooGraphQL tutorial](https://woographql.com/blog/building-headless-shops-with-woographql-chapter-1-of-5) to understand the detailed setup and workings of the project.
