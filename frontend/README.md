@@ -4,13 +4,15 @@ This project is the frontend portion of the WooGraphQL demo, built using [Next.j
 
 ## Getting Started
 
-First, run the development server:
+First, install dependencies and run development server:
 
 ```bash
 
 npm install
 
-# then
+```
+Then:
+```bash
 
 npm run dev
 
